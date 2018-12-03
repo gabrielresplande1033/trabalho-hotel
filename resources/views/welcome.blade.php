@@ -3,7 +3,6 @@
 
 @section('content')
     <!-- Home -->
-
     <div class="home">
 
         <!-- Home Slider -->
@@ -644,4 +643,6 @@
             </div>
         </div>
     </div>
+
+
 @endsection

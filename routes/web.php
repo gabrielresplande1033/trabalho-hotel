@@ -18,6 +18,10 @@ Route::group(['middleware' => 'web'], function (){
 
     Route::auth();
 
-    Route::get('/home','HomeController@index')->name('home');
+    Route::get('/home','WelcomeController@index')->name('home');
+
+    Route::get('/lista','ListaHoteisController@index')->name('lista');
+
+    Route::get('/hotel', 'HotelController@index')->name('hotel');
 
 });
