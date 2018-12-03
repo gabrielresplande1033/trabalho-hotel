@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateQuartoTable extends Migration
+class CreateHotelImagemTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,15 @@ class CreateQuartoTable extends Migration
      */
     public function up()
     {
-        Schema::create('quarto', function (Blueprint $table) {
+        Schema::create('hotel_imagem', function (Blueprint $table) {
             $table->increments('id');
 
             $table->integer('hotel_id')->unsigned();
             $table->foreign('hotel_id')->references('id')->on('hotel')->onDelete('cascade');
 
-            $table->string('nome');
-            $table->float('precoDiaria');
-            $table->string('url');
+            $table->integer('imagem_id')->unsigned();
+            $table->foreign('imagem_id')->references('id')->on('imagem')->onDelete('cascade');
+
             $table->timestamps();
         });
     }
@@ -33,6 +33,6 @@ class CreateQuartoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('quarto');
+        Schema::dropIfExists('hotel_imagem');
     }
 }
