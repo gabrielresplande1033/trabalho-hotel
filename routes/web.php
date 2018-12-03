@@ -14,10 +14,10 @@
 Route::get('/usuarios','UsuariosController@index');
 
 Route::group(['middleware' => 'web'], function (){
-    Route::get('/', 'HomeController@index');
+    Route::get('/', 'WelcomeController@index')->name('welcome.index');
 
     Route::auth();
 
-    Route::get('/home','HomeController@index');
+    Route::get('/home','HomeController@index')->name('home');
 
 });
