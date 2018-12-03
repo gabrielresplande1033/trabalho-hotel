@@ -15,6 +15,8 @@ class Imagem extends Model implements Transformable
 {
     use TransformableTrait;
 
+    protected $table = 'imagem';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -23,5 +25,9 @@ class Imagem extends Model implements Transformable
     protected $fillable = [
         'url'
     ];
+
+    public function hotelImagem() {
+        return $this->hasOne(HotelImagem::class);
+    }
 
 }

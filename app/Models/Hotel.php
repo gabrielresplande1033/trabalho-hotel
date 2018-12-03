@@ -15,6 +15,8 @@ class Hotel extends Model implements Transformable
 {
     use TransformableTrait;
 
+    protected $table = 'hotel';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -27,4 +29,11 @@ class Hotel extends Model implements Transformable
         'descricao'
     ];
 
+    public function quarto() {
+        return $this->hasMany(Quarto::class);
+    }
+
+    public function hotelImagem() {
+        return $this->hasMany(HotelImagem::class);
+    }
 }

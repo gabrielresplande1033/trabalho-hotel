@@ -15,6 +15,8 @@ class Reserva extends Model implements Transformable
 {
     use TransformableTrait;
 
+    protected $table = 'reserva';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -25,5 +27,13 @@ class Reserva extends Model implements Transformable
         'quarto_id',
         'total'
     ];
+
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
+
+    public function quarto() {
+        return $this->hasOne(Quarto::class);
+    }
 
 }

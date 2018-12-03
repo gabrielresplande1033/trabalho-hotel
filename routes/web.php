@@ -24,4 +24,6 @@ Route::group(['middleware' => 'web'], function (){
 
     Route::get('/hotel', 'HotelController@index')->name('hotel');
 
+    Route::get('/teste', 'HotelController@store')->name('hotel');
+
 });

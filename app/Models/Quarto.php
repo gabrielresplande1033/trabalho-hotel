@@ -15,6 +15,8 @@ class Quarto extends Model implements Transformable
 {
     use TransformableTrait;
 
+    protected $table = 'quarto';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -26,5 +28,13 @@ class Quarto extends Model implements Transformable
         'precoDiaria',
         'url'
     ];
+
+    public function hotel() {
+        return $this->belongsTo(Hotel::class);
+    }
+
+    public function reserva() {
+        return $this->belongsTo(Reserva::class);
+    }
 
 }
