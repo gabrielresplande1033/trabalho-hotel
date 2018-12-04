@@ -23,7 +23,7 @@ Route::group(['middleware' => 'web'], function (){
 
     Route::get('/register', 'LoginController@user_register')->name('user.register');
 
-    Route::post('/register', 'LoginController@user_register_store')->name('user.register.store');
+    Route::get('/register', 'LoginController@user_register_store')->name('user.register.store');
 
     Route::get('/registeradm', 'LoginController@admin_register')->name('admin.register');
 
@@ -36,6 +36,8 @@ Route::group(['middleware' => 'web'], function (){
     Route::get('/lista','ListaHoteisController@index')->name('lista');
 
     Route::get('/hotel', 'HotelController@index')->name('hotel');
+
+    Route::get('/sobre','SobreController@index')->name('sobre');
 
 });
 
