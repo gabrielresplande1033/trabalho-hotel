@@ -31,13 +31,22 @@ Route::group(['middleware' => 'web'], function (){
 
     Route::get('/', 'WelcomeController@index')->name('welcome.index');
 
-    Route::get('/home','WelcomeController@index')->name('home');
+    Route::get('/home','LoginController@home')->name('home');
 
     Route::get('/lista','ListaHoteisController@index')->name('lista');
 
     Route::get('/hotel', 'HotelController@index')->name('hotel');
 
     Route::get('/sobre','SobreController@index')->name('sobre');
+
+    Route::get('/hotel-escolhido','HotelController@paginaHotel')->name('hotel-escolhido');
+
+    Route::get('/mail', 'appControllerMail@index');
+
+    Route::get('/primeiro', 'appControllerMail@enviarPrimeiroEmail');
+
+    Route::post('/enviar', 'formatarController@enviarEmail')->name('enviar');
+
 
 });
 
@@ -55,4 +64,3 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function() {
 
 });
 
-Route::get('/home', 'HomeController@index')->name('home');

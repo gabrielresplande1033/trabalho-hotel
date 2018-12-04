@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.user_app')
 
 @section('content')
     <!-- Main Navigation -->
@@ -103,8 +103,7 @@
 
                             <div class="search_tabs_container">
                                 <div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-                                    <div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
-
+                                    <div style = "    margin-left: -17px; margin-right: 16px;" class="search_tab active d-flex flex-row align-items-center justify-content-lg-center"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
                                 </div>
                             </div>
 
@@ -140,77 +139,7 @@
                                             <option>03</option>
                                         </select>
                                     </div>
-                                    <div class="extras">
-                                        <ul class="search_extras clearfix">
-                                            <li class="search_extras_item">
-                                                <div class="clearfix">
-                                                    <input type="checkbox" id="search_extras_1" class="search_extras_cb">
-                                                    <label for="search_extras_1">Pet Friendly</label>
-                                                </div>
-                                            </li>
-                                            <li class="search_extras_item">
-                                                <div class="clearfix">
-                                                    <input type="checkbox" id="search_extras_2" class="search_extras_cb">
-                                                    <label for="search_extras_2">Car Parking</label>
-                                                </div>
-                                            </li>
-                                            <li class="search_extras_item">
-                                                <div class="clearfix">
-                                                    <input type="checkbox" id="search_extras_3" class="search_extras_cb">
-                                                    <label for="search_extras_3">Wireless Internet</label>
-                                                </div>
-                                            </li>
-                                            <li class="search_extras_item">
-                                                <div class="clearfix">
-                                                    <input type="checkbox" id="search_extras_4" class="search_extras_cb">
-                                                    <label for="search_extras_4">Reservations</label>
-                                                </div>
-                                            </li>
-                                            <li class="search_extras_item">
-                                                <div class="clearfix">
-                                                    <input type="checkbox" id="search_extras_5" class="search_extras_cb">
-                                                    <label for="search_extras_5">Private Parking</label>
-                                                </div>
-                                            </li>
-                                            <li class="search_extras_item">
-                                                <div class="clearfix">
-                                                    <input type="checkbox" id="search_extras_6" class="search_extras_cb">
-                                                    <label for="search_extras_6">Smoking Area</label>
-                                                </div>
-                                            </li>
-                                            <li class="search_extras_item">
-                                                <div class="clearfix">
-                                                    <input type="checkbox" id="search_extras_7" class="search_extras_cb">
-                                                    <label for="search_extras_7">Wheelchair Accessible</label>
-                                                </div>
-                                            </li>
-                                            <li class="search_extras_item">
-                                                <div class="clearfix">
-                                                    <input type="checkbox" id="search_extras_8" class="search_extras_cb">
-                                                    <label for="search_extras_8">Pool</label>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="more_options">
-                                        <div class="more_options_trigger">
-                                            <a href="#">load more options</a>
-                                        </div>
-                                        <ul class="more_options_list clearfix">
-                                            <li class="more_options_item">
-                                                <div class="clearfix">
-                                                    <input type="checkbox" id="more_options_1" class="search_extras_cb">
-                                                    <label for="more_options_1">Pet Friendly</label>
-                                                </div>
-                                            </li>
-                                            <li class="more_options_item">
-                                                <div class="clearfix">
-                                                    <input type="checkbox" id="more_options_2" class="search_extras_cb">
-                                                    <label for="more_options_2">Car Parking</label>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+
                                     <button class="button search_button">search<span></span><span></span><span></span></button>
                                 </form>
                             </div>

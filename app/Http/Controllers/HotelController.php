@@ -33,6 +33,11 @@ class HotelController extends  Controller{
         return view('admin.hotel.index', compact('hoteis'));
     }
 
+    public function paginaHotel()
+    {
+        return view('hotel');
+    }
+
     public function create()
     {
         return view('admin.hotel.create');

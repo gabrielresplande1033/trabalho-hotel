@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.user_app')
 
 @section('content')
 <link rel="stylesheet" type="text/css" href="styles/offers_styles.css">
@@ -18,7 +18,6 @@
     <!-- Offers -->
 
     <div class="offers">
-
         <!-- Search -->
 
         <div class="search">
@@ -260,6 +259,7 @@
             </div>
         </div>
 
+
         <!-- Offers -->
 
         <div class="container">
@@ -327,7 +327,7 @@
                                                 <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
                                             </ul>
                                         </div>
-                                        <div class="button book_button"><a href="{{ route('hotel') }}">book<span></span><span></span><span></span></a></div>
+                                        <div class="button book_button"><a href="{{ route('hotel-escolhido') }}">book<span></span><span></span><span></span></a></div>
                                         <div class="offer_reviews">
                                             <div class="offer_reviews_content">
                                                 <div class="offer_reviews_title">very good</div>
