@@ -10,12 +10,12 @@
 @section('body')
     <div class="register-box">
         <div class="register-logo">
-            <a href="{{ url(config('adminlte.dashboard_url', 'home')) }}">{!! config('adminlte.logo', '<b>Admin</b>LTE') !!}</a>
+            <a href="{{ route('admin.register.store') }}">{!! config('adminlte.logo', '<b>Admin</b>LTE') !!}</a>
         </div>
 
         <div class="register-box-body">
             <p class="login-box-msg">{{ trans('adminlte::adminlte.register_message') }}</p>
-            <form action="{{ url(config('adminlte.register_url', 'register')) }}" method="post">
+            <form action="{{ route('admin.register.store') }}" method="post">
                 {!! csrf_field() !!}
 
                 <div class="form-group has-feedback {{ $errors->has('name') ? 'has-error' : '' }}">

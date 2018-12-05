@@ -32,14 +32,31 @@ class LoginController extends Controller {
     }
 
     public function user_register_store(Request $request) {
-        $this->userRepository->create(['name' => $request->name, 'email' => $request->email, 'password' => bcrypt($request->password)]);
+        $this->userRepository->create([
+            'name' => $request->name,
+            'permissao' => 1,
+            'email' => $request->email,
+            'password' => bcrypt($request->password)
+        ]);
 
         flash('Usuário criado com sucesso.')->success();
         return redirect()->back();
     }
 
+    public function admin_register_store(Request $request) {
+        $this->userRepository->create([
+            'name' => $request->name,
+            'permissao' => 2,
+            'email' => $request->email,
+            'password' => bcrypt($request->password)
+        ]);
+
+        flash('Admin criado com sucesso.')->success();
+        return redirect()->back();
+    }
+
     public function admin_logar(Request $request) {
-        if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'permissao' => 1])) {
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'permissao' => 2])) {
             return redirect()->route('admin.index');
         }
         flash('Email ou senha inválido.')->error();
@@ -47,7 +64,7 @@ class LoginController extends Controller {
     }
 
     public function user_logar(Request $request) {
-        if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'permissao' => 2])) {
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'permissao' => 1])) {
             return redirect()->route('welcome.index');
         }
         flash('Email ou senha inválido.')->error();

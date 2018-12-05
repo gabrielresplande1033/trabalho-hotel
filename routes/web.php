@@ -23,9 +23,11 @@ Route::group(['middleware' => 'web'], function (){
 
     Route::get('/register', 'LoginController@user_register')->name('user.register');
 
-    Route::get('/register', 'LoginController@user_register_store')->name('user.register.store');
+    Route::post('/register', 'LoginController@user_register_store')->name('user.register.store');
 
     Route::get('/registeradm', 'LoginController@admin_register')->name('admin.register');
+
+    Route::post('/registeradm', 'LoginController@admin_register_store')->name('admin.register.store');
 
     Route::post('/logout', 'LoginController@logout')->name('logout');
 
