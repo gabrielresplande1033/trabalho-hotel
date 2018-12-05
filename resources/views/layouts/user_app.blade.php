@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Travelix Project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    {!! Html::style('libs/materialize/dist/css/materialize.min.css') !!}
+    {!! Html::style('//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css') !!}
+    {!! Html::style('styles/bootstrap4/bootstrap.min.css">
     <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+   {!! Html::style('plugins/OwlCarousel2-2.2.1/owl.carousel.css') !!}
+   {!! Html::style('plugins/OwlCarousel2-2.2.1/owl.theme.default.css') !!}
+   {!! Html::style('plugins/OwlCarousel2-2.2.1/animate.css') !!}
+   {!! Html::style('styles/main_styles.css') !!}
+   {!! Html::style('styles/responsive.css') !!}
 
 
 
@@ -196,25 +197,26 @@
 
 </div>
 
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+{!! Html::script(''//code.jquery.com/jquery-1.10.2.js') !!}
+{!! Html::script(''//code.jquery.com/ui/1.11.2/jquery-ui.js') !!}
 <script>
     $(function() {
         $( "#datepicker" ).datepicker();
     });
 </script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="js/custom.js"></script>
-<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="js/offers_custom.js"></script>
+{!! Html::script('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js') !!}
+{!! Html::script('js/jquery-3.2.1.min.js') !!}
+{!! Html::script('js/jquery-3.2.1.min.js') !!}
+{!! Html::script('styles/bootstrap4/popper.js') !!}
+{!! Html::script('styles/bootstrap4/bootstrap.min.js') !!}
+{!! Html::script('plugins/OwlCarousel2-2.2.1/owl.carousel.js') !!}
+{!! Html::script('plugins/easing/easing.js') !!}
+{!! Html::script('js/custom.js') !!}
+{!! Html::script('plugins/Isotope/isotope.pkgd.min.js') !!}
+{!! Html::script('plugins/easing/easing.js') !!}
+{!! Html::script('plugins/parallax-js-master/parallax.min.js') !!}
+{!! Html::script('js/offers_custom.js') !!}
 
 @stack('scripts')
 </body>

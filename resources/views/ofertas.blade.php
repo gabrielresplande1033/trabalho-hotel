@@ -309,7 +309,7 @@
                                 </div>
                                 <div class="col-lg-8">
                                     <div class="offers_content">
-                                        <div class="offers_price">{{$hotel->valor}}<span>per night</span></div>
+                                        <div class="offers_price">R$ {{$hotel->valor}}<span>por noite</span></div>
                                         <div class="rating_r rating_r_4 offers_rating" data-rating="4">
                                             <i></i>
                                             <i></i>
@@ -326,7 +326,7 @@
                                                 <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
                                             </ul>
                                         </div>
-                                        <div class="button book_button"><a href="{{ route('hotel-escolhido', $hotel->id) }}">book<span></span><span></span><span></span></a></div>
+                                        <div class="button book_button"><a href="{{ route('hotel.escolhido', $hotel->id) }}">alugar<span></span><span></span><span></span></a></div>
                                         <div class="offer_reviews">
                                             <div class="offer_reviews_content">
                                                 <div class="offer_reviews_title">very good</div>

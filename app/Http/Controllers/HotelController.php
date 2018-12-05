@@ -33,9 +33,10 @@ class HotelController extends  Controller{
         return view('admin.hotel.index', compact('hoteis'));
     }
 
-    public function paginaHotel()
-    {
-        return view('hotel');
+    public function paginaHotel($id) {
+        $hotel = $this->hotelRepository->find($id);
+
+        return view('hotel', compact('hotel'));
     }
 
     public function create()

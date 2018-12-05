@@ -41,7 +41,7 @@ Route::group(['middleware' => 'web'], function (){
 
     Route::get('/sobre','SobreController@index')->name('sobre');
 
-    Route::get('/hotel-escolhido/{id}','HotelController@paginaHotel')->name('hotel-escolhido');
+    Route::get('/hotel-escolhido/{id}','HotelController@paginaHotel')->name('hotel.escolhido');
 
     Route::get('/mail', 'appControllerMail@index');
 
