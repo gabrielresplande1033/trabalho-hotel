@@ -19,7 +19,12 @@
                     @include('flash::message')
                     <div class="form-group">
                         <label for="nome">Home Hotel</label>
-                        <input type="input" name="nome" id="nome"  class="form-control" placeholder="Nome da categoria">
+                        <input type="input" name="nome" id="nome"  class="form-control" placeholder="Nome do hotel">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nome">Valor Hotel</label>
+                        <input type="number" name="valor" id="valor"  class="form-control" placeholder="Nome do hotel">
                     </div>
 
                     <div class="form-group">

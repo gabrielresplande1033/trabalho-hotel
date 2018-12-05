@@ -14,6 +14,7 @@
         </div>
 
         <div class="register-box-body">
+            @include('flash::message')
             <p class="login-box-msg">{{ trans('adminlte::adminlte.register_message') }}</p>
             <form action="{{ route('admin.register.store') }}" method="post">
                 {!! csrf_field() !!}
@@ -63,7 +64,7 @@
                 >{{ trans('adminlte::adminlte.register') }}</button>
             </form>
             <div class="auth-links">
-                <a href="{{ url(config('adminlte.login_url', 'login')) }}"
+                <a href="{{ route('admin.login') }}"
                    class="text-center">{{ trans('adminlte::adminlte.i_already_have_a_membership') }}</a>
             </div>
         </div>

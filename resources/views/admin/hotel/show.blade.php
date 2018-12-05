@@ -24,6 +24,11 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="nome">Valor Hotel</label>
+                        <input type="number" name="valor" id="valor"  class="form-control" placeholder="Nome do hotel">
+                    </div>
+
+                    <div class="form-group">
                         <label for="nota">Nota Hotel</label>
                         <input type="number" name="nota" id="nota"  class="form-control" placeholder="Nota do Hotel" value="{{ $hotel->nota }}">
                     </div>

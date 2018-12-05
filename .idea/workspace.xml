@@ -2,149 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e47440c1-fd71-457c-91a8-bcea14df49f2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HotelImagemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HotelImagemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ImagemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ImagemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuartoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuartoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReservaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReservaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SobreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SobreController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/appControllerMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/appControllerMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/formatarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/formatarController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/HotelCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/HotelCreateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/HotelImagemCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/HotelImagemCreateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/HotelImagemUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/HotelImagemUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/HotelUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/HotelUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ImagemCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ImagemCreateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ImagemUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ImagemUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/QuartoCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/QuartoCreateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/QuartoUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/QuartoUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ReservaCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ReservaCreateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ReservaUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ReservaUpdateRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/SendMainUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/SendMainUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ListaHoteisController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ListaHoteisController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Hotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Hotel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/HotelImagem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/HotelImagem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Imagem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Imagem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Quarto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Quarto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Reserva.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Reserva.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/HotelImagemRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/HotelImagemRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/HotelImagemRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/HotelImagemRepositoryEloquent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/HotelRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/HotelRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/HotelRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/HotelRepositoryEloquent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/ImagemRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/ImagemRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/ImagemRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/ImagemRepositoryEloquent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/QuartoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/QuartoRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/QuartoRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/QuartoRepositoryEloquent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/ReservaRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/ReservaRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/ReservaRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/ReservaRepositoryEloquent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/UserRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/UserRepositoryEloquent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/adminlte.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminlte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/repository.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/repository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_03_230913_create_imagem_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_03_230913_create_imagem_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_03_230953_create_hotel_imagem_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_03_230953_create_hotel_imagem_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_03_231503_create_reserva_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_03_231503_create_reserva_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/funcoes_hotel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/funcoes_hotel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/requisicao-ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/requisicao-ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/css/auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/css/auth.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/AdminLTE.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/AdminLTE.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/AdminLTE.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/AdminLTE.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-black-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-black-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-black-light.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-black-light.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-black.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-black.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-black.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-black.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-blue-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-blue-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-blue-light.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-blue-light.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-blue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-blue.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-blue.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green-light.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green-light.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-green.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-purple-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-purple-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-purple-light.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-purple-light.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-purple.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-purple.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-purple.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-purple.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-red-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-red-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-red-light.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-red-light.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-red.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-red.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-red.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-red.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-yellow-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-yellow-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-yellow-light.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-yellow-light.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-yellow.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-yellow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-yellow.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/css/skins/skin-yellow.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/js/adminlte.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/js/adminlte.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/dist/js/adminlte.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/dist/js/adminlte.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/iCheck/icheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/iCheck/icheck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/iCheck/icheck.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/iCheck/icheck.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/iCheck/square/blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/iCheck/square/blue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/iCheck/square/blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/iCheck/square/blue.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/plugins/iCheck/square/blue@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/plugins/iCheck/square/blue@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/Ionicons/css/ionicons.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/Ionicons/css/ionicons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/Ionicons/css/ionicons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/Ionicons/css/ionicons.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/Ionicons/fonts/ionicons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/Ionicons/fonts/ionicons.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/Ionicons/fonts/ionicons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/Ionicons/fonts/ionicons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/Ionicons/fonts/ionicons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/Ionicons/fonts/ionicons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/Ionicons/fonts/ionicons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/Ionicons/fonts/ionicons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/css/font-awesome.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/css/font-awesome.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/jquery/dist/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/jquery/dist/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/jquery/dist/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/jquery/dist/jquery.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/adminlte/vendor/jquery/dist/jquery.slimscroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/adminlte/vendor/jquery/dist/jquery.slimscroll.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/errors/_check_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/errors/_check_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_03_204216_create_hotel_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_03_204216_create_hotel_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/hotel/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hotel/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/hotel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hotel/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/hotel/load.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hotel/load.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/hotel/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hotel/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/quarto/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/quarto/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/quarto/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/quarto/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/quarto/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/quarto/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/reserva/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/reserva/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/reserva/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/reserva/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/reserva/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/reserva/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/primeiro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/primeiro.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sobre.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sobre.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ofertas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ofertas.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vendor/adminlte/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/adminlte/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/adminlte/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/adminlte/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/adminlte/page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/adminlte/page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/adminlte/partials/menu-item-top-nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/adminlte/partials/menu-item-top-nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/adminlte/partials/menu-item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/adminlte/partials/menu-item.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/adminlte/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/adminlte/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/adminlte/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/adminlte/passwords/reset.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vendor/adminlte/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/adminlte/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -219,10 +83,31 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="344">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListaHoteisController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ListaHoteisController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ofertas.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/ofertas.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="299" column="58" lean-forward="true" selection-start-line="299" selection-start-column="58" selection-end-line="299" selection-end-column="58" />
+              <folding>
+                <element signature="e#18604#18652#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -240,17 +125,26 @@
       <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+            <state relative-caret-position="325">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/vendor/adminlte/login.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/vendor/adminlte/register.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+            <state relative-caret-position="210">
+              <caret line="17" column="91" lean-forward="true" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -267,36 +161,13 @@
       <file leaf-file-name="formatarController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/formatarController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="195">
               <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SendMainUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Mail/SendMainUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sobre.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/sobre.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -352,8 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Models/Imagem.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HotelImagemController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ImagemController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuartoController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ReservaController.php" />
@@ -364,13 +233,10 @@
         <option value="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/user_login.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/vendor/adminlte/login.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/home/index.blade.php" />
         <option value="$PROJECT_DIR$/config/adminlte.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/errors/_check_form.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/hotel/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/hotel/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/hotel/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/hotel/load.blade.php" />
         <option value="$PROJECT_DIR$/public/js/funcoes_hotel.js" />
@@ -384,10 +250,8 @@
         <option value="$PROJECT_DIR$/resources/views/sobre.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SobreController.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ListaHoteisController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/oferta_app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/ofertas.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/hotel.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/user_app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/mail.blade.php" />
@@ -398,11 +262,18 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/formatarController.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/auth/user_register.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/adminlte/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/adminlte/register.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ListaHoteisController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Hotel.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_03_204216_create_hotel_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/hotel/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/hotel/show.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/ofertas.blade.php" />
       </list>
     </option>
   </component>
@@ -549,26 +420,13 @@
               <item name="trabalho-hotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="trabalho-hotel" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trabalho-hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trabalho-hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trabalho-hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trabalho-hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Mail" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trabalho-hotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="trabalho-hotel" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trabalho-hotel" type="b2602c69:ProjectViewProjectNode" />
@@ -602,22 +460,15 @@
               <item name="trabalho-hotel" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trabalho-hotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="trabalho-hotel" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trabalho-hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trabalho-hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="adminlte" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="hotel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trabalho-hotel" type="b2602c69:ProjectViewProjectNode" />
@@ -675,12 +526,12 @@
       <workItem from="1543838673327" duration="22315000" />
       <workItem from="1543877884425" duration="20993000" />
       <workItem from="1543924108244" duration="25657000" />
-      <workItem from="1544040751811" duration="1201000" />
+      <workItem from="1544040751811" duration="2320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84604000" />
+    <option name="totallyTimeSpent" value="85723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1080" extended-state="6" />
@@ -696,6 +547,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18249734" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32979852" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.2497332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -705,7 +557,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32979852" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -737,38 +588,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Hotel.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/HotelImagem.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Imagem.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Quarto.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Reserva.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ListaHoteisController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ImagemController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -791,13 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ofertas.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-451">
-          <caret line="238" column="98" selection-start-line="238" selection-start-column="98" selection-end-line="238" selection-end-column="98" />
         </state>
       </provider>
     </entry>
@@ -836,13 +648,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/HotelCreateRequest.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/hotel/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="68" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="68" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/ImagemRepository.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -906,16 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/formatarController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Mail/SendMainUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -950,13 +745,6 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_03_231503_create_reserva_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -978,30 +766,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/formatarController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/adminlte/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/errors/_check_form.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/home/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/adminlte/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="91" lean-forward="true" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Hotel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_03_230953_create_hotel_imagem_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_03_204216_create_hotel_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/hotel/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/hotel/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="61" lean-forward="true" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="344">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ListaHoteisController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        <state relative-caret-position="210">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/adminlte/register.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/ofertas.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        <state relative-caret-position="281">
+          <caret line="299" column="58" lean-forward="true" selection-start-line="299" selection-start-column="58" selection-end-line="299" selection-end-column="58" />
+          <folding>
+            <element signature="e#18604#18652#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

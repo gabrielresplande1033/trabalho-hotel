@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Repositories\HotelRepository;
+
 /**
  * Created by PhpStorm.
  * User: gabriel
@@ -10,7 +12,15 @@ namespace App\Http\Controllers;
 
 class ListaHoteisController extends  Controller{
 
+    protected $hotelRepository;
+
+    public function __construct(HotelRepository $hotelRepository) {
+        $this->hotelRepository = $hotelRepository;
+    }
+
     public function index() {
-        return view('ofertas');
+        $hoteis = $this->hotelRepository->all();
+
+        return view('ofertas', compact('hoteis'));
     }
 }
