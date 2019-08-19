@@ -7,15 +7,13 @@
     <meta name="description" content="Travelix Project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {!! Html::style('libs/materialize/dist/css/materialize.min.css') !!}
-    {!! Html::style('//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css') !!}
-    {!! Html::style('styles/bootstrap4/bootstrap.min.css">
-    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    {!! Html::script('//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css') !!}
+    {!! Html::style('styles/bootstrap4/bootstrap.min.css') !!}
    {!! Html::style('plugins/OwlCarousel2-2.2.1/owl.carousel.css') !!}
    {!! Html::style('plugins/OwlCarousel2-2.2.1/owl.theme.default.css') !!}
    {!! Html::style('plugins/OwlCarousel2-2.2.1/animate.css') !!}
    {!! Html::style('styles/main_styles.css') !!}
    {!! Html::style('styles/responsive.css') !!}
-
 
 
     @stack('styles')
@@ -197,8 +195,8 @@
 
 </div>
 
-{!! Html::script(''//code.jquery.com/jquery-1.10.2.js') !!}
-{!! Html::script(''//code.jquery.com/ui/1.11.2/jquery-ui.js') !!}
+{!! Html::script('code.jquery.com/jquery-1.10.2.js') !!}
+{!! Html::script('code.jquery.com/ui/1.11.2/jquery-ui.js') !!}
 <script>
     $(function() {
         $( "#datepicker" ).datepicker();
