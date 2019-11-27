@@ -15,9 +15,11 @@
 
                     <!-- Hotel Info -->
 
-                    <div class="hotel_info">
-
-                        <!-- Title -->
+                  <div class="hotel_info">
+                   <div style="padding-top: 170px">
+                    @include('flash::message')
+                   </div>
+                    <!-- Title -->
                         <div style="padding-top: 160px"></div>
                             <div class="hotel_title_content">
                                 <h1 style="font-size: 60px;text-align: center;position: center; color: black" class="hotel_title">Reserva no: {{$hotel->nome}} </h1>

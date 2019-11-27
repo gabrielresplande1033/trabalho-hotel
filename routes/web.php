@@ -75,5 +75,7 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function() {
     Route::delete('/quartos/delete', 'QuartoController@destroy')->name('quartos.destroy');
     Route::get('/pagReserva/{idHotel}/{idQuarto}','QuartoController@paginaReserva')->name('paginaReserva');
 
+    Route::get('/reservas', 'ReservaController@index')->name('reservas.index');
+
 });
 

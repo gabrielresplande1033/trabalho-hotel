@@ -146,6 +146,14 @@ return [
             'text' => 'Reservas',
             'url'  => 'admin/settings',
             'icon' => 'lock',
+            'submenu' => [
+                [
+                    'text' => 'Listar Reservas',
+                    'icon' => 'list',
+                    'url' => 'admin/reservas',
+                ]
+
+            ]
         ],
     ],
 
