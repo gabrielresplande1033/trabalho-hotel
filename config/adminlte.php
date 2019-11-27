@@ -129,6 +129,18 @@ return [
             'text' => 'Quartos',
             'url'  => 'admin/settings',
             'icon' => 'lock',
+            'submenu' => [
+                [
+                    'text' => 'Adicionar Quarto',
+                    'icon' => 'plus',
+                    'url'  => 'admin/quartos/adicionar',
+                ],
+                [
+                    'text' => 'Listar Quatros',
+                    'icon' => 'list',
+                    'url' => 'admin/quartos',
+                ]
+            ]
         ],
         [
             'text' => 'Reservas',

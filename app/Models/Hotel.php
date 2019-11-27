@@ -27,7 +27,8 @@ class Hotel extends Model implements Transformable
         'valor',
         'nota',
         'endereco',
-        'descricao'
+        'descricao',
+        'image'
     ];
 
     public function quarto() {

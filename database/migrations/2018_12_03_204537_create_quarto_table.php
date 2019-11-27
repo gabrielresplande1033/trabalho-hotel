@@ -17,11 +17,12 @@ class CreateQuartoTable extends Migration
             $table->increments('id');
 
             $table->integer('hotel_id')->unsigned();
-            $table->foreign('hotel_id')->references('id')->on('hotel')->onDelete('cascade');
+            $table->foreign('hotel_id')->references('id')->on('hotel');
 
             $table->string('nome');
+            $table->string('descricao');
             $table->float('precoDiaria');
-            $table->string('url');
+            $table->string('image');
             $table->timestamps();
         });
     }

@@ -41,6 +41,12 @@
                         <label for="descricao">Descrição do Hotel</label>
                         <input type="input" name="descricao" id="descricao"  class="form-control" placeholder="Descrição do Hotel">
                     </div>
+
+                    <div class="form-group">
+                        <label for="imagem">Imagem</label>
+                        <input type="file" name="image" id="image"  class="form-control">
+                    </div>
+
                 </div>
                 <!-- /.box-body -->
 

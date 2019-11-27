@@ -26,7 +26,8 @@ class Quarto extends Model implements Transformable
         'hotel_id',
         'nome',
         'precoDiaria',
-        'url'
+        'descricao',
+        'image'
     ];
 
     public function hotel() {

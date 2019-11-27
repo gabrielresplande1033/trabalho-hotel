@@ -20,6 +20,7 @@ class CreateHotelTable extends Migration
             $table->string('nota');
             $table->string('endereco');
             $table->string('descricao');
+            $table->string('image');
             $table->timestamps();
 
         });

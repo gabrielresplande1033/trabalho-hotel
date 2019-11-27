@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Repositories\HotelRepository;
 use Illuminate\Http\Request;
+use App\Models\Quarto;
 
 /**
  * Created by PhpStorm.
@@ -36,7 +37,9 @@ class HotelController extends  Controller{
     public function paginaHotel($id) {
         $hotel = $this->hotelRepository->find($id);
 
-        return view('hotel', compact('hotel'));
+        $quartos = Quarto::all();
+
+        return view('hotel', compact('hotel','quartos'));
     }
 
     public function create()
@@ -45,7 +48,28 @@ class HotelController extends  Controller{
     }
 
     public function store(Request $request) {
-        $this->hotelRepository->create($request->all());
+
+        $data = $request->all();
+
+        if($request->hasFile('image') && $request->file('image')->isValid()){
+            $name = $data['nome'];
+
+            $extenstion = $request->image->extension();
+            $nameFile = "{$name}.{$extenstion}";
+
+            $data['image'] = $nameFile;
+
+            $upload = $request->image->storeAs('public/hotels', $nameFile);
+
+            if(!$upload){
+                return redirect()
+                    ->back()
+                    ->with('error', 'Falha ao realizar upload da imagem');
+            }
+
+        }
+
+        $this->hotelRepository->create($data);
 
         flash('Hotel inserido com sucesso.')->success();
         return redirect()->back();

@@ -1,9 +1,14 @@
 @extends('layouts.user_app')
 
 @section('content')
+    <link rel="stylesheet" type="text/css" href="styles/offers_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/offers_responsive.css">
+    <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel = "folha de estilo">
+    <link href = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel = "stylesheet">
     <!-- Single Listing -->
 
     <div class="container">
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="single_listing">
@@ -13,296 +18,69 @@
                     <div class="hotel_info">
 
                         <!-- Title -->
-                        <div class="hotel_title_container d-flex flex-lg-row flex-column">
+                        <div style="padding-top: 160px"></div>
+                        <div class="hotel_title_container d-flex flex-lg-row flex-column" style="width:100%;height:300px;position:relative;background-repeat: no-repeat;background-size:100%; background-position:center;background-image:url( '{{url("storage/hotels/{$hotel->image}")}}' )">
                             <div class="hotel_title_content">
-                                <h1 class="hotel_title">Grand Hotel Eurostar</h1>
-                                <div class="rating_r rating_r_4 hotel_rating">
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                </div>
-                                <div class="hotel_location">345 677 Gran Via Street, no 34, Madrid, Spain</div>
+                                <h1 style="font-size: 80px;text-align: center;position: center; color: black" class="hotel_title">{{$hotel->nome}}</h1>
                             </div>
                             <div class="hotel_title_button ml-lg-auto text-lg-right">
                                 <div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
-                                <div class="hotel_map_link_container">
-                                    <div class="hotel_map_link">See Location on Map</div>
-                                </div>
                             </div>
                         </div>
-
-                        <!-- Listing Image -->
-
-                        <div class="hotel_image">
-                            <img src="images/listing_hotel.jpg" alt="">
-                            <div class="hotel_review_container d-flex flex-column align-items-center justify-content-center">
-                                <div class="hotel_review">
-                                    <div class="hotel_review_content">
-                                        <div class="hotel_review_title">very good</div>
-                                        <div class="hotel_review_subtitle">100 reviews</div>
-                                    </div>
-                                    <div class="hotel_review_rating text-center">8.1</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Hotel Gallery -->
-
-                        <div class="hotel_gallery">
-                            <div class="hotel_slider_container">
-                                <div class="owl-carousel owl-theme hotel_slider">
-
-                                    <!-- Hotel Gallery Slider Item -->
-                                    <div class="owl-item">
-                                        <a class="colorbox cboxElement" href="images/listing_1.jpg">
-                                            <img src="images/listing_thumb_1.jpg" alt="https://unsplash.com/@jbriscoe">
-                                        </a>
-                                    </div>
-
-                                    <!-- Hotel Gallery Slider Item -->
-                                    <div class="owl-item">
-                                        <a class="colorbox cboxElement" href="images/listing_2.jpg">
-                                            <img src="images/listing_thumb_2.jpg" alt="https://unsplash.com/@grovemade">
-                                        </a>
-                                    </div>
-
-                                    <!-- Hotel Gallery Slider Item -->
-                                    <div class="owl-item">
-                                        <a class="colorbox cboxElement" href="images/listing_3.jpg">
-                                            <img src="images/listing_thumb_3.jpg" alt="https://unsplash.com/@fransaraco">
-                                        </a>
-                                    </div>
-
-                                    <!-- Hotel Gallery Slider Item -->
-                                    <div class="owl-item">
-                                        <a class="colorbox cboxElement" href="images/listing_4.jpg">
-                                            <img src="images/listing_thumb_4.jpg" alt="https://unsplash.com/@workweek">
-                                        </a>
-                                    </div>
-
-                                    <!-- Hotel Gallery Slider Item -->
-                                    <div class="owl-item">
-                                        <a class="colorbox cboxElement" href="images/listing_5.jpg">
-                                            <img src="images/listing_thumb_5.jpg" alt="https://unsplash.com/@workweek">
-                                        </a>
-                                    </div>
-
-                                    <!-- Hotel Gallery Slider Item -->
-                                    <div class="owl-item">
-                                        <a class="colorbox cboxElement" href="images/listing_6.jpg">
-                                            <img src="images/listing_thumb_6.jpg" alt="https://unsplash.com/@avidenov">
-                                        </a>
-                                    </div>
-
-                                    <!-- Hotel Gallery Slider Item -->
-                                    <div class="owl-item">
-                                        <a class="colorbox cboxElement" href="images/listing_7.jpg">
-                                            <img src="images/listing_thumb_7.jpg" alt="https://unsplash.com/@pietruszka">
-                                        </a>
-                                    </div>
-
-                                    <!-- Hotel Gallery Slider Item -->
-                                    <div class="owl-item">
-                                        <a class="colorbox cboxElement" href="images/listing_8.jpg">
-                                            <img src="images/listing_thumb_8.jpg" alt="https://unsplash.com/@rktkn">
-                                        </a>
-                                    </div>
-
-                                    <!-- Hotel Gallery Slider Item -->
-                                    <div class="owl-item">
-                                        <a class="colorbox cboxElement" href="images/listing_9.jpg">
-                                            <img src="images/listing_thumb_9.jpg" alt="https://unsplash.com/@mindaugas">
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- Hotel Slider Nav - Prev -->
-                                <div class="hotel_slider_nav hotel_slider_prev">
-                                    <svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
-											<defs>
-                                                <linearGradient id='hotel_grad_prev'>
-                                                    <stop offset='0%' stop-color='#fa9e1b'/>
-                                                    <stop offset='100%' stop-color='#8d4fff'/>
-                                                </linearGradient>
-                                            </defs>
-                                        <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-											M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-											C22.545,2,26,5.541,26,9.909V23.091z"/>
-                                        <polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
-											11.042,18.219 "/>
-										</svg>
-                                </div>
-
-                                <!-- Hotel Slider Nav - Next -->
-                                <div class="hotel_slider_nav hotel_slider_next">
-                                    <svg version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
-											<defs>
-                                                <linearGradient id='hotel_grad_next'>
-                                                    <stop offset='0%' stop-color='#fa9e1b'/>
-                                                    <stop offset='100%' stop-color='#8d4fff'/>
-                                                </linearGradient>
-                                            </defs>
-                                        <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-										M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-										C22.545,2,26,5.541,26,9.909V23.091z"/>
-                                        <polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
-										17.046,15.554 "/>
-										</svg>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- Hotel Info Text -->
 
                         <div class="hotel_info_text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum quam placerat non. Etiam venenatis nibh augue, sed eleifend justo tristique eu</p>
-                        </div>
+                            <h3 style="color:black">{{$hotel->endereco}}</h3>
 
-                        <!-- Hotel Info Tags -->
-
-                        <div class="hotel_info_tags">
-                            <ul class="hotel_icons_list">
-                                <li class="hotel_icons_item"><img src="images/post.png" alt=""></li>
-                                <li class="hotel_icons_item"><img src="images/compass.png" alt=""></li>
-                                <li class="hotel_icons_item"><img src="images/bicycle.png" alt=""></li>
-                                <li class="hotel_icons_item"><img src="images/sailboat.png" alt=""></li>
-                            </ul>
+                            <p style="color: black">{{$hotel->descricao}}</p>
                         </div>
 
                     </div>
+
+                    <h1 style="color:blue">Quartos</h1>
 
                     <!-- Rooms -->
 
                     <div class="rooms">
 
                         <!-- Room -->
-                        <div class="room">
 
-                            <!-- Room -->
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <div class="room_image"><img src="images/room_1.jpg" alt="https://unsplash.com/@grovemade"></div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="room_content">
-                                        <div class="room_title">Double or Twin Room</div>
-                                        <div class="room_price">$99/night</div>
-                                        <div class="room_text">FREE cancellation before 23:59 on 20 December 2017</div>
-                                        <div class="room_extra">Breakfast $7.50</div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 text-lg-right">
-                                    <div class="room_button">
-                                        <div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @foreach($quartos as $quarto)
 
-                        <!-- Room -->
-                        <div class="room">
+                        @if($hotel->id == $quarto->hotel_id)
 
-                            <!-- Room -->
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <div class="room_image"><img src="images/room_2.jpg" alt="https://unsplash.com/@oowgnuj"></div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="room_content">
-                                        <div class="room_title">Double or Twin Room</div>
-                                        <div class="room_price">$99/night</div>
-                                        <div class="room_text">FREE cancellation before 23:59 on 20 December 2017</div>
-                                        <div class="room_extra">Breakfast $7.50</div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 text-lg-right">
-                                    <div class="room_button">
-                                        <div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="offers">
 
-                    </div>
+                        <div class="offers_item rating_4">
+                                    <div class="row">
+                                        <div class="col-lg-1 temp_col"></div>
+                                        <div class="col-lg-3 col-1680-4">
+                                            <div class="offers_image_container">
+                                                <!-- Image by https://unsplash.com/@kensuarez -->
 
-                    <!-- Reviews -->
+                                                {{--<img src="{{url("storage/hotels/{$hotel->image}")}}" alt="">--}}
 
-                    <div class="reviews">
-                        <div class="reviews_title">reviews</div>
-                        <div class="reviews_container">
-
-                            <!-- Review -->
-                            <div class="review">
-                                <div class="row">
-                                    <div class="col-lg-1">
-                                        <div class="review_image">
-                                            <img src="images/review_1.jpg" alt="https://unsplash.com/@saaout">
+                                                <div class="offers_image_background" style="background-image:url( '{{url("storage/quartos/{$quarto->image}")}}' )"></div>
+                                                <div class="offer_name"><a href="single_listing.html">{{$quarto->nome}}</a></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-11">
-                                        <div class="review_content">
-                                            <div class="review_title_container">
-                                                <div class="review_title">"We loved the services"</div>
-                                                <div class="review_rating">9.5</div>
+                                        <div class="col-lg-8">
+                                            <div class="offers_content">
+                                                <div class="offers_price">R$ {{$quarto->precoDiaria}}<span>por noite</span></div>
+                                                <p class="offers_text">{{$quarto->descricao}}</p>
+                                                <button type="button" class="btn btn-success">Efetuar Reserva</button>
+                                                <div class="offer_reviews">
+                                                    <div class="offer_reviews_rating text-center">20</div>
+                                                </div>
                                             </div>
-                                            <div class="review_text">
-                                                <p>Tetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum.</p>
-                                            </div>
-                                            <div class="review_name">Christinne Smith</div>
-                                            <div class="review_date">12 November 2017</div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- Review -->
-                            <div class="review">
-                                <div class="row">
-                                    <div class="col-lg-1">
-                                        <div class="review_image">
-                                            <img src="images/review_2.jpg" alt="Image by Andrew Robles">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-11">
-                                        <div class="review_content">
-                                            <div class="review_title_container">
-                                                <div class="review_title">"Nice staff and great location"</div>
-                                                <div class="review_rating">9.5</div>
-                                            </div>
-                                            <div class="review_text">
-                                                <p>Tetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum.</p>
-                                            </div>
-                                            <div class="review_name">Christinne Smith</div>
-                                            <div class="review_date">12 November 2017</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
                         </div>
-                    </div>
+                        @endif
 
-                    <!-- Location on Map -->
+                        @endforeach
 
-                    <div class="location_on_map">
-                        <div class="location_on_map_title">location on map</div>
-
-                        <!-- Google Map -->
-
-                        <div class="travelix_map">
-                            <div id="google_map" class="google_map">
-                                <div class="map_container">
-                                    <div id="map"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>

@@ -64,5 +64,13 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function() {
     Route::put('/hoteis/editar/{id}', 'HotelController@update')->name('hoteis.update');
     Route::delete('/hoteis/delete', 'HotelController@destroy')->name('hoteis.destroy');
 
+
+    Route::get('/quartos', 'QuartoController@index')->name('quartos.index');
+    Route::get('/quartos/adicionar', 'QuartoController@create')->name('quartos.create');
+    Route::post('/quartos/adicionar', 'QuartoController@store')->name('quartos.store');
+    Route::get('/quartos/editar/{id}', 'QuartoController@show')->name('quartos.show');
+    Route::put('/quartos/editar/{id}', 'QuartoController@update')->name('quartos.update');
+    Route::delete('/quartos/delete', 'QuartoController@destroy')->name('quartos.destroy');
+
 });
 
