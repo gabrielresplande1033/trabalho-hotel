@@ -67,7 +67,8 @@
                                             <div class="offers_content">
                                                 <div class="offers_price">R$ {{$quarto->precoDiaria}}<span>por noite</span></div>
                                                 <p class="offers_text">{{$quarto->descricao}}</p>
-                                                <button type="button" class="btn btn-success">Efetuar Reserva</button>
+                                                {{--<button type="button" onclick="{{ route('paginaReserva', $hotel->id )}}" class="btn btn-success">Efetuar Reserva</button>--}}
+                                                <div class="button book_button"><a href="{{ route('paginaReserva', ['idHotel' => $hotel->id, 'idQuarto' => $quarto->id]) }}">Ver Quartos<span></span><span></span><span></span></a></div>
                                                 <div class="offer_reviews">
                                                     <div class="offer_reviews_rating text-center">20</div>
                                                 </div>

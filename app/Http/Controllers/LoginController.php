@@ -79,6 +79,6 @@ class LoginController extends Controller {
 
     public function home()
     {
-        return view('user_home');
+        return redirect("/");
     }
 }

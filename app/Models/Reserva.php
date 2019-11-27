@@ -25,7 +25,10 @@ class Reserva extends Model implements Transformable
     protected $fillable = [
         'user_id',
         'quarto_id',
-        'total'
+        'email',
+        'telefone',
+        'qtdPessoas',
+        'valorTotal'
     ];
 
     public function user() {
