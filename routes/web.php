@@ -49,6 +49,8 @@ Route::group(['middleware' => 'web'], function (){
 
     Route::post('/enviar', 'formatarController@enviarEmail')->name('enviar');
 
+    Route::post('/pagReserva', 'ReservaController@store')->name('reserva.store');
+
 
 });
 
@@ -71,6 +73,9 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function() {
     Route::get('/quartos/editar/{id}', 'QuartoController@show')->name('quartos.show');
     Route::put('/quartos/editar/{id}', 'QuartoController@update')->name('quartos.update');
     Route::delete('/quartos/delete', 'QuartoController@destroy')->name('quartos.destroy');
+    Route::get('/pagReserva/{idHotel}/{idQuarto}','QuartoController@paginaReserva')->name('paginaReserva');
+
+    Route::get('/reservas', 'ReservaController@index')->name('reservas.index');
 
 });
 

@@ -6,6 +6,7 @@ use App\Models\Quarto;
 use App\Repositories\QuartoRepository;
 use App\Repositories\HotelRepository;
 use App\Models\Hotel;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 
@@ -46,6 +47,17 @@ class QuartoController extends Controller {
         $quartos = Quarto::all();
 
         return view('quarto', compact('hotel','quartos'));
+    }
+
+    public function paginaReserva($idHotel, $idQuarto){
+
+        $hotel = Hotel::query()->find($idHotel);
+
+        $quarto = Quarto::query()->find($idQuarto);
+
+        $user = Auth::user();
+
+        return view('reserva', compact('hotel', 'quarto', 'user'));
     }
 
     public function create()

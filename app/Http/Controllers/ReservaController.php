@@ -1,16 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-
-use App\Http\Requests;
-use Prettus\Validator\Contracts\ValidatorInterface;
-use Prettus\Validator\Exceptions\ValidatorException;
-use App\Http\Requests\ReservaCreateRequest;
-use App\Http\Requests\ReservaUpdateRequest;
-use App\Repositories\ReservaRepository;
 use App\Validators\ReservaValidator;
+use App\Repositories\ReservaRepository;
+use App\Models\Reserva;
+
+
 
 /**
  * Class ReservasController.
@@ -18,5 +14,36 @@ use App\Validators\ReservaValidator;
  * @package namespace App\Http\Controllers;
  */
 class ReservaController extends Controller {
+
+    /**
+     * @var ReservaRepository
+     */
+
+    protected $reservaRepository;
+
+    /**
+     * ReservaController constructor.
+     * @param ReservaRepository $reservaRepository
+     */
+
+    public function index() {
+        $reservas = Reserva::all();
+
+        return view('admin.reserva.index', compact('reservas'));
+    }
+
+    public function store(Request $request){
+
+        $reserva = new Reserva();
+
+        $reserva->create($request->all());
+
+        flash('Reserva efetuada com sucesso.
+        Verifique seu email.
+        ')->success();
+        return redirect()->back();
+
+    }
+
 
 }

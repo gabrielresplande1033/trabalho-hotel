@@ -65,7 +65,7 @@ class LoginController extends Controller {
 
     public function user_logar(Request $request) {
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'permissao' => 1])) {
-            return redirect()->route('welcome.index');
+            return redirect()->route('home');
         }
         flash('Email ou senha inválido.')->error();
         return redirect()->back();
@@ -79,6 +79,6 @@ class LoginController extends Controller {
 
     public function home()
     {
-        return view('user_home');
+        return redirect("/");
     }
 }

@@ -66,9 +66,6 @@
 
             }
 
-            function eoq() {
-                console.log('precoDiaria');
-            }
         </script>
     </section>
 @stop
