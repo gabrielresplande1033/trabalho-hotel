@@ -19,6 +19,7 @@ class CreateQuartoTable extends Migration
             $table->integer('hotel_id')->unsigned();
             $table->foreign('hotel_id')->references('id')->on('hotel');
 
+            $table->string('cidade');
             $table->string('nome');
             $table->string('descricao');
             $table->float('precoDiaria');

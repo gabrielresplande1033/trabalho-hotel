@@ -23,6 +23,12 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="nome">Home Hotel</label>
+                        <input type="input" name="cidade" id="cidade"  class="form-control" placeholder="Nome da Cidade">
+                    </div>
+
+
+                    <div class="form-group">
                         <label for="nome">Valor Hotel</label>
                         <input type="number" name="valor" id="valor"  class="form-control" placeholder="Nome do hotel">
                     </div>

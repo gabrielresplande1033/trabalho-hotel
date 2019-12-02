@@ -22,7 +22,7 @@
                         <label for="nome">Selecione o Hotel referente ao quarto</label>
                         <select id="hotel_id" name="hotel_id" onChange="atualizarValorQuarto()">
                             @foreach($hoteis as $hotel)
-                                    <option name="valor" id="eoq" value="{{$hotel->id}}">{{$hotel->nome}} - Valor da diaria: R${{$hotel->valor}}</option>
+                                    <option name="valor" id="eoq" value="{{$hotel->id}}">{{$hotel->nome}}-{{$hotel->cidade}}</option>
                             @endforeach
                         </select>
                     </div>
@@ -32,8 +32,13 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="nome">Cidade</label>
+                        <input type="input" id="cidade" name="cidade" class="form-control" placeholder="Cidade" readonly>
+                    </div>
+
+                    <div class="form-group">
                         <label for="nome">Valor Quarto</label>
-                        <input type="number" id="precoDiaria" name="precoDiaria" class="form-control" value="0" placeholder="Valor do Quarto" readonly>
+                        <input type="number" id="precoDiaria" name="precoDiaria" class="form-control" value="0" placeholder="Valor do Quarto">
                     </div>
 
                     <div class="form-group">
@@ -59,8 +64,8 @@
             function atualizarValorQuarto() {
                 var e = document.getElementById("hotel_id");
                 var value = e.options[e.selectedIndex].text;
-                var split = value.split("").filter(Number).join("");
-                document.getElementById("precoDiaria").value = split;
+                var split = value.split("-");
+                document.getElementById("cidade").value = split[1];
 
                 console.log(split);
 

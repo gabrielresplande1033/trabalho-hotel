@@ -24,6 +24,7 @@ class Hotel extends Model implements Transformable
      */
     protected $fillable = [
         'nome',
+        'cidade',
         'valor',
         'nota',
         'endereco',

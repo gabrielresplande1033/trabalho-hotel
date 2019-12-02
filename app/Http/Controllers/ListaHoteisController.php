@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Repositories\HotelRepository;
+use Illuminate\Http\Request;
 
 /**
  * Created by PhpStorm.
@@ -18,8 +19,13 @@ class ListaHoteisController extends  Controller{
         $this->hotelRepository = $hotelRepository;
     }
 
-    public function index() {
-        $hoteis = $this->hotelRepository->all();
+    public function index(Request $request) {
+
+        if($request->getContent() != ""){
+            $hoteis = $this->hotelRepository->findWhere(['cidade' => $request->cidade]);
+        }else{
+            $hoteis = $this->hotelRepository->all();
+        }
 
         return view('ofertas', compact('hoteis'));
     }

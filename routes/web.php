@@ -35,7 +35,7 @@ Route::group(['middleware' => 'web'], function (){
 
     Route::get('/home','LoginController@home')->name('home');
 
-    Route::get('/lista','ListaHoteisController@index')->name('lista');
+    Route::any('/lista','ListaHoteisController@index')->name('lista');
 
     Route::get('/hotel', 'HotelController@index')->name('hotel');
 
@@ -74,6 +74,8 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function() {
     Route::put('/quartos/editar/{id}', 'QuartoController@update')->name('quartos.update');
     Route::delete('/quartos/delete', 'QuartoController@destroy')->name('quartos.destroy');
     Route::get('/pagReserva/{idHotel}/{idQuarto}','QuartoController@paginaReserva')->name('paginaReserva');
+    Route::post('/hoteis/search', 'HotelController@search')->name('hoteis.search');
+
 
     Route::get('/reservas', 'ReservaController@index')->name('reservas.index');
 

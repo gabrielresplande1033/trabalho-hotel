@@ -22,10 +22,13 @@ class CreateReservaTable extends Migration
             $table->integer('quarto_id')->unsigned();
             $table->foreign('quarto_id')->references('id')->on('quarto')->onDelete('cascade');
 
-            $table->string('email')->unsigned();
-            $table->string('telefone')->unsigned();
-            $table->string('qtdPessoas')->unsigned();
-            $table->string('valorTotal')->unsigned();
+            $table->date('data_inicio');
+            $table->date('data_fim');
+
+            $table->string('email');
+            $table->string('telefone');
+            $table->string('qtdPessoas');
+            $table->string('valorTotal');
 
             $table->timestamps();
         });

@@ -110,7 +110,8 @@ class QuartoController extends Controller {
         return redirect()->back();
     }
 
-    public function destroy(Request $request) {
+    public function destroy(Request $request)
+    {
         try {
             $removido = $this->quartoRepository->delete($request->id);
             return response()->json($removido);

@@ -25,6 +25,7 @@ class Quarto extends Model implements Transformable
     protected $fillable = [
         'hotel_id',
         'nome',
+        'cidade',
         'precoDiaria',
         'descricao',
         'image'

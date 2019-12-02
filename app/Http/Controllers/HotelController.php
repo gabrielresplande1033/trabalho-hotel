@@ -97,4 +97,13 @@ class HotelController extends  Controller{
             exit;
         }
     }
+
+    public function search(Request $request){
+
+        $hoteis = $this->hotelRepository->findWhere(['cidade' => $request->cidade]);
+
+        return view('ofertas', compact('hoteis'));
+
+
+    }
 }
